@@ -74,11 +74,13 @@ select {
   margin-bottom: 30px;
   background-color: #fff;
   opacity: .8;
-  transition: opacity 1s ease;
+  transition: opacity 1.5s ease;
 }
 
 
-input:focus {
+input:focus,
+textarea:focus,
+select:focus {
   border: 2px solid #793BB8;
   opacity: 1;
 }
@@ -118,19 +120,7 @@ fieldset {
 }
 
 
-button {
-  color: white;
-  background-color: #3BB8B8;
-  min-width: 48%;
-  border-radius: 5px;
-  min-height: 50px;
-  border: none;
-  padding: 0;
-}
 
-button + button {
-  float: right;
-}
 
 
 legend {
@@ -202,6 +192,24 @@ input[type=checkbox]:checked + label:before {
     text-align: center;
     line-height: 15px;
 }
+
+/*Styling the buttons*/
+
+button {
+  color: white;
+  background-color: #3BB8B8;
+  min-width: 48%;
+  border-radius: 5px;
+  min-height: 50px;
+  border: none;
+  padding: 0;
+}
+
+button + button {
+  float: right;
+}
+
+
 
 /*footer*/
 
